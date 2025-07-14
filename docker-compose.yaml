@@ -1,0 +1,25 @@
+version: '3'
+
+
+services:
+  app_one:
+    build:
+      context: .
+      dockerfile: dockerfile
+    container_name: app_one_c
+    ports:
+      - "3001:3000"
+  app_two:
+    build:
+      context: .
+      dockerfile: dockerfile
+    container_name: app_two_c
+    ports:
+      - "3002:3000"
+  app_three:
+    build:
+      context: .
+      dockerfile: dockerfile
+    container_name: app_three_c
+    ports:
+      - "3003:3000"
